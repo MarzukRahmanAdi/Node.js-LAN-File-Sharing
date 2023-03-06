@@ -1,5 +1,4 @@
-// @ts-check
-"use_strict";
+
 
 const express = require('express');
 const formidable = require('formidable');
@@ -483,7 +482,7 @@ module.exports = function (conf) {
     //Getting config from conf.
     let filesFolderPath = conf.filesFolderPath || path.join(__dirname, 'files'),
         publicPath = conf.publicPath || path.join(__dirname, 'public'),
-        port = normalizePort(conf.port || '8000'),
+        port = normalizePort(conf.port || '8080'),
         allowDeletion = conf.allowDeletion === true,
         multiUpload = conf.multiUpload === true,
         folderUpload = conf.folderUpload === true,

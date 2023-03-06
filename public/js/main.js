@@ -21,9 +21,9 @@ function updateAddressInfo(addresses, port) {
     if (previousIpPortString != newIpPortString) {
         IPandPortElement.innerText = newIpPortString;
         if (addresses.length > 0) {
-            theQRCodeElement.setAttribute("src", `/qr_codes/${addresses[0]}_${port}.png`)
+            // theQRCodeElement.setAttribute("src", `/qr_codes/${addresses[0]}_${port}.png`)
         } else {
-            theQRCodeElement.setAttribute("src", "");
+            // theQRCodeElement.setAttribute("src", "");
         }
         previousIpPortString = newIpPortString;
     }
